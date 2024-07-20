@@ -8,8 +8,9 @@ config_files=("alacritty" "i3" "picom" "polybar" "rofi")
 sudo pacman -Syu --noconfirm
 
 # move config files
+cd ~/.config
+mkdir ./${config_files[@]}
 cd ~
-mkdir ~/.config/${config_files[@]}
 cp -r ~/dotfiles/${config_files[@]} ~/.config/
 cp -r ~/dotfiles/.oh-my-zsh ~/
 cp ~/dotfiles/.zshrc ~/
@@ -23,7 +24,7 @@ sudo pacman -S ${pacman_packages[@]} --noconfirm
 
 # install yay
 git clone https://aur.archlinux.org/yay.git
-cd yay
+cd ./yay
 makepkg -si
 cd ..
 rm -rf yay
