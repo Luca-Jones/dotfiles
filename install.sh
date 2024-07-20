@@ -7,6 +7,17 @@ config_files=("alacritty" "i3" "picom" "polybar" "rofi")
 # update packages
 sudo pacman -Syu --noconfirm
 
+# move config files
+cd ~
+mkdir ~/.config/${config_files[@]}
+cp -r ~/dotfiles/${config_files[@]} ~/.config/
+cp -r ~/dotfiles/.oh-my-zsh ~/
+cp ~/dotfiles/.zshrc ~/
+cp !/dotfiles/.p10k.zsh ~/
+
+# move fonts
+cp -r ~/dotfiles/0xProto /usr/share/fonts/
+
 # install all pacman packages
 sudo pacman -S ${pacman_packages[@]} --noconfirm
 
@@ -21,18 +32,16 @@ rm -rf yay
 yay -S ${yay_packages[@]} --noconfirm
 
 # git packages
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git 
+# h -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 git clone https://github.com/zsh-users/zsh-autosuggestions.git 
 git clone "https://github.com/pystardust/ani-cli.git"
 sudo cp ani-cli/ani-cli /usr/local/bin
 rm -rf ani-cli
 
-# move config files
-cd ~
-cp -r ~/dotfiles/${config_files[@]} ~/.config/
-cp ~/dotfiles/.zshrc ~
+# set zsh as default shell
+chsh -s $(which zsh)
 
 # start display manager service
 systemctl enable gdm.service
