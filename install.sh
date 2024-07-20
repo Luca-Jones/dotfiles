@@ -7,16 +7,6 @@ config_files=("alacritty" "i3" "picom" "polybar" "rofi")
 # update packages
 sudo pacman -Syu --noconfirm
 
-# move config files
-cd ~/.config
-mkdir ./${config_files[@]}
-cd ~
-cp -r ~/dotfiles/${config_files[@]} ~/.config/
-cp ~/dotfiles/zshrc ~/.zshrc
-cp ~/dotfiles/p10k.zsh ~/.p10k.zsh
-
-
-
 # move fonts
 sudo cp -r ~/dotfiles/0xProto /usr/share/fonts/
 
@@ -41,6 +31,16 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git
 git clone "https://github.com/pystardust/ani-cli.git"
 sudo cp ani-cli/ani-cli /usr/local/bin
 rm -rf ani-cli
+
+# move config files
+cd ~/.config
+mkdir ./${config_files[@]}
+cd ~
+cp -r ~/dotfiles/${config_files[@]} ~/.config/
+cp ~/dotfiles/zshrc ~/.zshrc
+cp ~/dotfiles/p10k.zsh ~/.p10k.zsh
+mkdir ~/Pictures/wallpapers
+cp ~/dotfiles/waterfront.jpg ~/Pictures/wallpapers/
 
 # set zsh as default shell
 chsh -s $(which zsh)
