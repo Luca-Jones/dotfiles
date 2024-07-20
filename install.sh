@@ -13,12 +13,12 @@ mkdir ./${config_files[@]}
 cd ~
 cp -r ~/dotfiles/${config_files[@]} ~/.config/
 cp ~/dotfiles/zshrc ~/.zshrc
-sudo cp ~/dotfiles/p10k.zsh ~/.p10k.zsh
+cp ~/dotfiles/p10k.zsh ~/.p10k.zsh
 
 
 
 # move fonts
-cp -r ~/dotfiles/0xProto /usr/share/fonts/
+sudo cp -r ~/dotfiles/0xProto /usr/share/fonts/
 
 # install all pacman packages
 sudo pacman -S ${pacman_packages[@]} --noconfirm
@@ -34,7 +34,7 @@ rm -rf yay
 yay -S ${yay_packages[@]} --noconfirm
 
 # git packages
-h -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 # git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 git clone https://github.com/zsh-users/zsh-autosuggestions.git 
