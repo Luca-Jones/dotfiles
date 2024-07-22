@@ -6,11 +6,11 @@ yay_packages=("feh" "picom" "cava" "spotify")
 # update packages
 sudo pacman -Syu --noconfirm
 
-# move fonts
-sudo cp -r ~/dotfiles/0xProto /usr/share/fonts/
-
 # install all pacman packages
-sudo pacman -S ${pacman_packages[@]} --noconfirm
+for pacman_pack in ${pacman_packages[@]}
+do
+    sudo pacman -S $pacman_pack --noconfirm
+done
 
 # install yay
 git clone https://aur.archlinux.org/yay.git
@@ -20,23 +20,26 @@ cd ..
 rm -rf yay
 
 # install yay packages
-yay -S ${yay_packages[@]} --noconfirm
+for yay_pack in ${yay_packages[@]}
+do
+    yay -S $yay_pack --noconfirm
+done
 
 cd ~
 
 # git packages
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 # git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
-git clone https://github.com/zsh-users/zsh-autosuggestions.git 
+# git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+# git clone https://github.com/zsh-users/zsh-autosuggestions.git 
 git clone "https://github.com/pystardust/ani-cli.git"
 sudo cp ani-cli/ani-cli /usr/local/bin
 rm -rf ani-cli
 
-config_files=("alacritty" "i3" "picom" "polybar" "rofi")
-
 # move fonts
 sudo cp -r ~/dotfiles/0xProto /usr/share/fonts/
+
+config_files=("alacritty" "i3" "picom" "polybar" "rofi")
 
 # move config files
 cd ~
