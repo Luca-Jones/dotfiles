@@ -10,7 +10,8 @@
 ```
 git clone https://github.com/Luca-Jones/dotfiles
 cd dotfiles
-stow .
+stow --adopt .
+git --reset hard
 ```
 
 ### Install yay
@@ -22,39 +23,40 @@ mkpkg -si
 ```
 
 ## Components
-|                           | Software Name                 | Package Name  |
-|:--------------------------|:-----------------------------:|:-------------:|
-| **Window Manager**        | Hyprland                      | hyprland      |
-| **Bar**                   | Waybar                        | waybar (AUR)  |
-| **App Launcher**          | rofi                          | rofi-wayland  |
-| **Notifications**         |                               |               |
-| **Terminal Emulator**     | kitty                         | kitty         |
-| **Shell**                 |                               |               | 
-| **Text Editors**          |                               |               |
-| **Networking**            | Network Manager               |networkmanager |
-| **Resource Monitor**      |                               |               |
-| **File Manager**          |                               |               |
-| **Fonts**                 |                               |               |
-| **Colour Scheme**         |                               |               |
-| **GTK + Qt Themes**       |                               |               |
-| **Cursor**                |                               |               |
-| **Icons**                 |                               |               |
-| **Lockscreen**            |                               |               |
-| **ImageViewer**           |                               |               |
-| **MediaPlayer**           |                               |               |
-| **Music**                 |                               |               |
-| **Screenshot**            |                               |               |
-| **Clipboard**             |                               |               |
-| **Color Picker**          |                               |               |
-| **Browswer**              | Brave                         | brave-bin     |
-| **Wallpaper**             | Hyprpaper                     |hyprpaper (AUR)|
+|                           | Software Name                 |   Package Name  |
+|:--------------------------|:-----------------------------:|:---------------:|
+| **Window Manager**        | Hyprland                      | hyprland        |
+| **Bar**                   | Waybar                        | waybar (AUR)    |
+| **App Launcher**          | rofi                          | rofi-wayland    |
+| **Notifications**         |                               |                 |
+| **Terminal Emulator**     | kitty                         | kitty           |
+| **Shell**                 |                               |                 | 
+| **Text Editors**          |                               |                 |
+| **Networking**            | Network Manager               | networkmanager  |
+| **Resource Monitor**      |                               |                 |
+| **File Manager**          |                               |                 |
+| **Fonts**                 |                               |                 |
+| **Colour Scheme**         |                               |                 |
+| **GTK + Qt Themes**       |                               |                 |
+| **Cursor**                |                               |                 |
+| **Icons**                 |                               |                 |
+| **Lockscreen**            |                               |                 |
+| **ImageViewer**           |                               |                 |
+| **MediaPlayer**           |                               |                 |
+| **Music**                 |                               |                 |
+| **Screenshot**            |                               |                 |
+| **Clipboard**             |                               |                 |
+| **Color Picker**          |                               |                 |
+| **Browswer**              | Firefox                       | firefox         |
+| **Wallpaper**             | Hyprpaper                     | hyprpaper (AUR) |
 
 ## CLI Tools
 - tree
 - git
 - neofetch
+- tldr
 
-## System Info
+## Other System Info
 - audio: pipewire
 - firewall: firewalld
 - boot: systemd
