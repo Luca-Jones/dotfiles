@@ -60,3 +60,4 @@ mkpkg -si
 - audio: pipewire
 - firewall: firewalld
 - boot: systemd
+- brightness control: brightnessctl
