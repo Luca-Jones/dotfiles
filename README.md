@@ -1,16 +1,37 @@
 # Dotfiles
 
+## Requirements
+
+- git
+- stow
+
+## Installation
+
+```
+git clone https://github.com/Luca-Jones/dotfiles
+cd dotfiles
+stow .
+```
+
+### Install yay
+
+```
+git clone https://aur.archlinux.org/yay.git
+cd yay
+mkpkg -si
+```
+
 ## Components
 |                           | Arch + Hyprland               | Package Name  |
 |:--------------------------|:-----------------------------:|:-------------:|
-| **Window Manager**        |                               |               |
+| **Window Manager**        | Hyprland                      | hyprland      |
 | **Bar**                   |                               |               |
-| **App Launcher**          |                               |               |
+| **App Launcher**          | rofi                          | rofi-wayland  |
 | **Notifications**         |                               |               |
-| **Terminal Emulator**     |                               |               |
+| **Terminal Emulator**     | kitty                         | kitty         |
 | **Shell**                 |                               |               | 
 | **Text Editors**          |                               |               |
-| **Networking**            |                               |               |
+| **Networking**            | Network Manager               |networkmanager |
 | **Resource Monitor**      |                               |               |
 | **File Manager**          |                               |               |
 | **Fonts**                 |                               |               |
@@ -25,8 +46,14 @@
 | **Screenshot**            |                               |               |
 | **Clipboard**             |                               |               |
 | **Color Picker**          |                               |               |
+| **Browswer**              | Brave                         | brave-bin     |
 
 ## CLI Tools
 - tree
 - git
 - neofetch
+
+## System Info
+- audio: pipewire
+- firewall: firewalld
+- boot: systemd
