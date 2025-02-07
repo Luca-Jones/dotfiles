@@ -1,0 +1,27 @@
+List of non-default packages installed:
+
+PACMAN
+
+wm: hyprland
+app launcher: rofi
+terminal: kitty
+audio: pipewire
+network:
+	networkmanager (nmcli, nmtui)
+	firewalld
+browswer: brave
+AUR helper: yay
+cli tools:
+	tree
+	git
+	neofetch
+	man
+AUR
+
+
+
+
+INSTALLING YAY:
+git clone https://aur.archlinux.org/yay.git
+cd yay
+mkpkg -si
