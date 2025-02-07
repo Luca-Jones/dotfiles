@@ -22,7 +22,7 @@ mkpkg -si
 ```
 
 ## Components
-|                           | Arch + Hyprland               | Package Name  |
+|                           | Software Name                 | Package Name  |
 |:--------------------------|:-----------------------------:|:-------------:|
 | **Window Manager**        | Hyprland                      | hyprland      |
 | **Bar**                   |                               |               |
