@@ -47,6 +47,7 @@ mkpkg -si
 | **Clipboard**             |                               |               |
 | **Color Picker**          |                               |               |
 | **Browswer**              | Brave                         | brave-bin     |
+| **Wallpaper**             | Hyprpaper                     | hyprpaper     |
 
 ## CLI Tools
 - tree
