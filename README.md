@@ -25,7 +25,7 @@ mkpkg -si
 |                           | Software Name                 | Package Name  |
 |:--------------------------|:-----------------------------:|:-------------:|
 | **Window Manager**        | Hyprland                      | hyprland      |
-| **Bar**                   |                               |               |
+| **Bar**                   | Waybar                        | waybar (AUR)  |
 | **App Launcher**          | rofi                          | rofi-wayland  |
 | **Notifications**         |                               |               |
 | **Terminal Emulator**     | kitty                         | kitty         |
@@ -47,7 +47,7 @@ mkpkg -si
 | **Clipboard**             |                               |               |
 | **Color Picker**          |                               |               |
 | **Browswer**              | Brave                         | brave-bin     |
-| **Wallpaper**             | Hyprpaper                     | hyprpaper     |
+| **Wallpaper**             | Hyprpaper                     |hyprpaper (AUR)|
 
 ## CLI Tools
 - tree
