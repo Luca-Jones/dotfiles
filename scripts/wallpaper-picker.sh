@@ -2,7 +2,6 @@
 #!/bin/sh
 
 # Prompt user to choose wallpaper type
-
 choice=$(echo -e "Static Wallpaper\nLive Wallpaper" | rofi -dmenu -i -p "Choose Wallpaper Type") 
 if [ -z "$choice" ]; then 
     echo "No choice selected. Keeping the current wallpaper." 
@@ -33,12 +32,8 @@ set_static_wallpaper() {
     # Map the selected filename back to its full path
     selected_file=$(find -L "$wallpaper_folder" -type f -name "$selected_filename")
 
-    # Set the wallpaper and apply Pywal colors
-    wal -i "$selected_file"
-
-    # Set the wallpaper with swaybg for Hyprland
-    pkill swaybg
     swww img --resize fit "$selected_file" 
+    wal -i "$selected_file"
 
 }
 
@@ -79,10 +74,11 @@ set_live_wallpaper() {
 
 # Execute the appropriate function based on user choice
 
-if [ "$choice" = "Static Wallpaper" ]; 
-    then set_static_wallpaper 
-    elif [ "$choice" = "Live Wallpaper" ]; 
-    then set_live_wallpaper 
-    else echo "Invalid choice. Keeping the current wallpaper." 
+if [ "$choice" = "Static Wallpaper" ]; then 
+    set_static_wallpaper 
+elif [ "$choice" = "Live Wallpaper" ]; then 
+    set_live_wallpaper 
+else 
+    echo "Invalid choice. Keeping the current wallpaper." 
     exit 0 
 fi
