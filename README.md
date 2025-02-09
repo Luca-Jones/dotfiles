@@ -35,7 +35,7 @@ makepkg -si
 | **Networking**            | Network Manager               | networkmanager              |
 | **Resource Monitor**      |                               |                             |
 | **File Manager**          | Thunar <br> yazi              | thunar <br> yazi            |
-| **Fonts**                 | Cascadia Code                 | [Caascadia Code](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/CascadiaCode.zip)|
+| **Fonts**                 | Cascadia Code                 | [Cascadia Code](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/CascadiaCode.zip)|
 | **GTK + Qt Themes**       |                               |                             |
 | **Cursor**                |                               |                             |
 | **Icons**                 |                               |                             |
