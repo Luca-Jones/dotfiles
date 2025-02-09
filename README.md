@@ -34,7 +34,7 @@ makepkg -si
 | **Text Editor**           | VS Code                       | visual-studio-code-bin (AUR)|
 | **Networking**            | Network Manager               | networkmanager              |
 | **Resource Monitor**      |                               |                             |
-| **File Manager**          |                               |                             |
+| **File Manager**          | Thunar <br> yazi              | thunar <br> yazi            |
 | **Fonts**                 |                               |                             |
 | **Colour Scheme**         |                               |                             |
 | **GTK + Qt Themes**       |                               |                             |
