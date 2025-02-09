@@ -4,8 +4,7 @@
       "margin-right": 10,
       "height" : 30,
       "modules-left": [
-        "temperature",
-        "hyprland/window"
+        "temperature"
       ],
       "modules-center": [
         "hyprland/workspaces"
@@ -16,14 +15,6 @@
         "battery",
         "clock"
       ],
-      "hyprland/window": {
-        "format": "{}",
-        "max-length": 35,
-        "rewrite": {
-          "": "   "
-        },
-        "separate-outputs": true
-      },
       "hyprland/workspaces": {
         "format": "{icon}",
         "on-click": "activate",
