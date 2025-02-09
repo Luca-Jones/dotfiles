@@ -19,7 +19,7 @@ git --reset hard
 ```
 git clone https://aur.archlinux.org/yay.git
 cd yay
-mkpkg -si
+makepkg -si
 ```
 
 ## Components
@@ -48,7 +48,7 @@ mkpkg -si
 | **Clipboard**             |                               |                             |
 | **Color Picker**          |                               |                             |
 | **Browswer**              | Firefox                       | firefox                     |
-| **Wallpaper**             | Hyprpaper                     | hyprpaper (AUR)             |
+| **Wallpaper**             | pywal                         | python-pywal                |
 
 ## CLI Tools
 - tree
