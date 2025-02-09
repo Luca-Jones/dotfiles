@@ -56,7 +56,10 @@ makepkg -si
 - tldr
 - unzip
 - fzf
-
+- thefuck
+- zsh-autosuggestions
+- zsh-syntax-highlighting
+  
 ## Other System Info
 - audio: pipewire
 - firewall: firewalld
