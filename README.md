@@ -48,7 +48,7 @@ makepkg -si
 | **Clipboard**             |                               |                             |
 | **Color Picker**          |                               |                             |
 | **Browswer**              | Firefox                       | firefox                     |
-| **Wallpaper**             | pywal                         | python-pywal                |
+| **Wallpaper**             | pywal & pywalfox              | python-pywal & python-pywalfox |
 
 ## CLI Tools
 - tree
