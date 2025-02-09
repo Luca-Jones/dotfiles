@@ -30,7 +30,7 @@ makepkg -si
 | **App Launcher**          | rofi                          | rofi-wayland                |
 | **Notifications**         |                               |                             |
 | **Terminal Emulator**     | kitty                         | kitty                       |
-| **Shell**                 |                               |                             | 
+| **Shell**                 | zsh <br> Oh My Zsh <br> powerlevel10k   | zsh <br> [Oh My Zsh](https://ohmyz.sh/) <br> [powerlevel10k](https://github.com/romkatv/powerlevel10k) | 
 | **Text Editor**           | VS Code                       | visual-studio-code-bin (AUR)|
 | **Networking**            | Network Manager               | networkmanager              |
 | **Resource Monitor**      |                               |                             |
@@ -39,15 +39,15 @@ makepkg -si
 | **GTK + Qt Themes**       |                               |                             |
 | **Cursor**                |                               |                             |
 | **Icons**                 |                               |                             |
-| **Lockscreen**            |                               |                             |
+| **Lockscreen**            |  Hyprlock                     |                             |
 | **ImageViewer**           |                               |                             |
 | **MediaPlayer**           |                               |                             |
-| **Music**                 |                               |                             |
+| **Music**                 |  Spotify                      |                             |
 | **Screenshot**            |                               |                             |
 | **Clipboard**             |                               |                             |
 | **Color Picker**          |                               |                             |
 | **Browswer**              | Firefox                       | firefox                     |
-| **Wallpaper**             | swww <br> pywal 16 colors <br> pywalfox <br> waypaper engine | swww <br> python-pywal16 (AUR) <br> python-pywalfox (AUR) <br> waypaper-engine (AUR)|
+| **Wallpaper**             | swww <br> pywal 16 colors <br> pywalfox | swww <br> python-pywal16 (AUR) <br> python-pywalfox (AUR)|
 
 ## CLI Tools
 - tree
@@ -55,6 +55,7 @@ makepkg -si
 - neofetch
 - tldr
 - unzip
+- fzf
 
 ## Other System Info
 - audio: pipewire
