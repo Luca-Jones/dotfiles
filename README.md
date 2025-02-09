@@ -48,7 +48,7 @@ makepkg -si
 | **Clipboard**             |                               |                             |
 | **Color Picker**          |                               |                             |
 | **Browswer**              | Firefox                       | firefox                     |
-| **Wallpaper**             | pywal 16 colors & pywalfox              | python-pywal16 (AUR) & python-pywalfox (AUR) |
+| **Wallpaper**             | swww <br> pywal 16 colors <br> pywalfox <br> waypaper engine | swww <br> python-pywal16 (AUR) <br> python-pywalfox (AUR) <br> waypaper-engine (AUR)|
 
 ## CLI Tools
 - tree
