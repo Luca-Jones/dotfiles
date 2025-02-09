@@ -4,23 +4,23 @@
       "margin-right": 10,
       "height" : 30,
       "modules-left": [
+        "temperature",
         "hyprland/window"
       ],
       "modules-center": [
         "hyprland/workspaces"
       ],
       "modules-right": [
-      "pulseaudio",
-      "network",
-      "temperature",
-      "battery",
-      "clock"
+        "pulseaudio",
+        "network",
+        "battery",
+        "clock"
       ],
       "hyprland/window": {
         "format": "{}",
         "max-length": 35,
         "rewrite": {
-          "": "Harsh"
+          "": "   "
         },
         "separate-outputs": true
       },
