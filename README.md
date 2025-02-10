@@ -64,6 +64,7 @@ makepkg -si
 - cava (AUR)
 - pipes.sh (AUR)
 - btop
+- tty-clock (AUR)
   
 ## Other System Info
 - audio: pipewire
