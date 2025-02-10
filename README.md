@@ -42,7 +42,7 @@ makepkg -si
 | **Lockscreen**            |  Hyprlock                     |                             |
 | **ImageViewer**           |                               |                             |
 | **MediaPlayer**           |                               |                             |
-| **Music**                 |  Spotify <br> Spicetify                |  spotify-launcher <br> [spicetiify](https://spicetify.app/docs/getting-started) |
+| **Music**                 |  Spotify <br> Spicetify       |  spotify-launcher <br> [spicetify](https://spicetify.app/docs/getting-started) |
 | **Screenshot**            |                               |                             |
 | **Clipboard**             |                               |                             |
 | **Color Picker**          |                               |                             |
