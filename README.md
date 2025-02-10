@@ -57,8 +57,13 @@ makepkg -si
 - unzip
 - fzf
 - thefuck
-- zsh-autosuggestions
-- zsh-syntax-highlighting
+- zsh-autosuggestions (git)
+- zsh-syntax-highlighting (git)
+- nerdfetch (AUR)
+- pokemon-colorscripts (AUR)
+- cava (AUR)
+- pipes.sh (AUR)
+- btop
   
 ## Other System Info
 - audio: pipewire
