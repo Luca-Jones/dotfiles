@@ -35,6 +35,8 @@ set_static_wallpaper() {
     swww img --resize fit "$selected_file" 
     wal -i "$selected_file"
 
+    pywalfox update
+    spicetify appply
 }
 
 set_live_wallpaper() {

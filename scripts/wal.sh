@@ -8,4 +8,6 @@ if [[ -f $wallpaper_path/$wallpaper_name ]]; then
     wall-change "$wallpaper_path/wallpaper"
 else
     exit 1
-fi3
+fi
+
+# Call spicetify script
