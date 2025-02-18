@@ -33,12 +33,11 @@ makepkg -si
 | **Shell**                 | zsh <br> Oh My Zsh <br> powerlevel10k   | zsh <br> [Oh My Zsh](https://ohmyz.sh/) <br> [powerlevel10k](https://github.com/romkatv/powerlevel10k) | 
 | **Text Editor**           | VS Code                       | visual-studio-code-bin (AUR)|
 | **Networking**            | Network Manager               | networkmanager              |
-| **Resource Monitor**      |                               |                             |
 | **File Manager**          | Thunar <br> yazi              | thunar <br> yazi            |
 | **Fonts**                 | Cascadia Code                 | [Cascadia Code](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/CascadiaCode.zip)|
 | **GTK + Qt Themes**       |                               |                             |
 | **Cursor**                |                               |                             |
-| **Icons**                 |                               |                             |
+| **Icons**                 |  hicolor-icon-theme           | hicolor-icon-theme          |
 | **Lockscreen**            |  Hyprlock                     |                             |
 | **ImageViewer**           |                               |                             |
 | **MediaPlayer**           |                               |                             |
@@ -65,6 +64,7 @@ makepkg -si
 - pipes.sh (AUR)
 - btop
 - tty-clock (AUR)
+- rofi-calc (git)
   
 ## Other System Info
 - audio: pipewire
