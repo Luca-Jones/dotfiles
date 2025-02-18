@@ -33,7 +33,7 @@ set_static_wallpaper() {
     selected_file=$(find -L "$wallpaper_folder" -type f -name "$selected_filename")
 
     swww img --resize fit "$selected_file" 
-    wal -i "$selected_file"
+    wal --cols16 -i "$selected_file"
 
     pywalfox update
     spicetify appply
