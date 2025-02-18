@@ -71,3 +71,4 @@ makepkg -si
 - firewall: firewalld
 - boot: systemd
 - brightness control: brightnessctl
+- bluetooth: bluez-utils
