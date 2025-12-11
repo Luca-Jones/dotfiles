@@ -18,7 +18,7 @@ zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 plugins=(
     git
     # copybuffer
-    # zoxide
+    zoxide
     # zsh-autosuggestions
     # zsh-autocomplete
     zsh-syntax-highlighting
