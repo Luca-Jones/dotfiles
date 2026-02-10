@@ -1,0 +1,226 @@
+i3:
+    - i3-wm
+    - i3blocks
+    - i3lock
+    - i3status
+
+    - brightnessctl
+
+    
+    - pavucontrol
+
+    - xorg-xinit
+    - xorg-xinput
+    - xorg-xrandr
+    - xss-lock
+    - xterm
+    - xf86-input-wacom
+    - xf86-video-amdgpu
+    - xf86-video-ati
+    - xf86-video-nouveau
+
+    - font-manager
+    - noto-fonts
+    - noto-fonts-emoji
+    - noto-fonts-extra
+    - ttf-jetbrains-mono-nerd
+    - ttf-ms-fonts
+
+    - dmenu
+    - rofi
+
+    - dunst
+
+    - feh
+    - waypaper
+    - loupe
+
+    - nautilus
+    - yazi
+
+    - zen-browser-bin
+
+    - flameshot
+
+    - kitty
+    - zsh
+
+    - lightdm
+    - lightdm-gtk-greeter
+
+    - polybar
+    - network-manager-applet
+    - onboard
+
+    - picom
+    
+    - mpv
+    
+
+    - zathura
+    - zathura-pdf-poppler
+
+terminal:
+    - bat
+    - btop
+    - cava
+    - cbonsai
+    - cmatrix
+    - lsd
+    - ncdu
+    - nerdfetch
+    - openbsd-netcat
+    - pfetch
+    - pipes.sh
+    - sl
+    - thefuck
+    - tree
+    - tty-clock
+    - zoxide
+    - neovim
+    - tldr
+
+graphical:
+    - xdg-utils # needed by discord + spotify, why not a dependency??
+    - betterdiscord-installer-bin
+    - discord
+    - gnome-bluetooth-3.0
+    - gnome-boxes
+    - gnome-weather
+    - obs-studio
+    - spicetify-cli
+    - spotify-launcher
+    - steam
+    - wine
+    - winetricks
+    - supertuxkart
+    - proton-pass-bin
+
+devel:
+    - bore
+    - cmake
+    - gdb
+    - inetutils
+    - jdk-openjdk
+    - ltrace
+    - python-pip
+    - strace
+    - visual-studio-code-bin
+
+school:
+    - gnome-pomodoro-git
+    - kicad
+    - libreoffice-still
+    - obsidian
+    - texlive-basic
+    - texlive-bibtexextra
+    - texlive-binextra
+    - texlive-context
+    - texlive-fontsextra
+    - texlive-fontsrecommended
+    - texlive-fontutils
+    - texlive-formatsextra
+    - texlive-games
+    - texlive-humanities
+    - texlive-latex
+    - texlive-latexextra
+    - texlive-latexrecommended
+    - texlive-luatex
+    - texlive-mathscience
+    - texlive-metapost
+    - texlive-music
+    - texlive-pictures
+    - texlive-plaingeneric
+    - texlive-pstricks
+    - texlive-publishers
+    - texlive-xetex
+    - xournalpp
+
+windows-vm:
+    - docker
+    - docker-compose
+    - freerdp
+    - winboat-bin
+
+base:
+    - base
+    - base-devel
+    - linux
+    - linux-firmware
+    
+    - grub
+    - efibootmgr
+    - os-prober
+    - dosfstools
+    - fuse3
+
+    - ly
+
+    - bluez
+
+    - firewalld
+    - iwd # internet wireless daemon
+    
+    - sof-firmware
+    - pipewire
+    - pipewire-alsa
+    - pipewire-jack
+    - pipewire-pulse
+    - wireplumber # policy manager for pipewire
+    - intel-media-driver
+    - intel-ucode
+    - libva-intel-driver
+    - vulkan-intel
+    - vulkan-nouveau
+    - vulkan-radeon
+    - mesa-utils
+
+    - networkmanager
+    - git
+    - vim
+    - stow
+    - wget
+    - unzip
+    - man-db
+    - man-pages
+    - fastifetch
+
+    - paru
+    - timeshift
+    - fzf
+
+trash:
+    - acpi
+    - asciiquarium
+    - blueman
+    - bluetui
+    - bluez-utils
+    - bob
+    - cheese
+    - ghidra
+    - gimp
+    - gst-plugin-pipewire
+    - gtk2
+    - helix
+    - htop
+
+    - kded
+    - krita
+    - gestures
+    - libinput-gestures
+    - libpulse
+    - luanti
+    - matugen-bin
+    - nss-mdns
+    - openvpn
+    - pacman-contrib
+    - qalculate-qt
+    - smartmontools
+    - syncthing
+    - tmux
+    - touchegg
+    - cursor-bin
+    - nitrogen
+    - wireless_tools
+    - yay
+    - nano # in base

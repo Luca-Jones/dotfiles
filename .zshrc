@@ -30,6 +30,8 @@ source $ZSH/oh-my-zsh.sh
 
 # aliases
 alias ls='lsd'
+alias antares='java -jar ~/school/3.2/CPEN_312/antares-1.32.0.jar'
+alias dupe='kitty -d $(pwd) --detach'
 # alias matlab="matlab -webui &"
 eval $(thefuck --alias)
 
@@ -41,4 +43,8 @@ mcc() {
 		matlab -nojvm -batch "pcode ${1%.*}"
 }
 
+mat() {
+		matlab -webui & disown
+}
 
+export QSYS_ROOTDIR="/home/luca/.cache/yay/quartus-free/pkg/quartus-free-quartus/opt/intelFPGA/25.1/quartus/sopc_builder/bin"
