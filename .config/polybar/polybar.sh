@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 killall -q polybar
-polybar &
+polybar top &
+polybar bottom &

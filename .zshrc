@@ -3,7 +3,7 @@ export ZSH_CUSTOM="$HOME/.oh-my-zsh"
 export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 export ARCHFLAGS="-arch $(uname -m)"
-export PATH=$PATH:/home/luca/.spicetify
+export PATH=$PATH:/home/luca/.spicetify:/home/luca/scripts/quartus-cli
 export TERMINAL=kitty
 
 ZSH_THEME="robbyrussell"
@@ -33,6 +33,7 @@ alias ls='lsd'
 alias antares='java -jar ~/school/3.2/CPEN_312/antares-1.32.0.jar'
 alias dupe='kitty -d $(pwd) --detach'
 # alias matlab="matlab -webui &"
+alias q='quartus-cli'
 eval $(thefuck --alias)
 
 mc() {
