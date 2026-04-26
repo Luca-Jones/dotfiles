@@ -23,27 +23,39 @@ return {
 			["<C-f>"] = { "scroll_documentation_down", "fallback" },
 			["<C-k>"] = { "show_signature", "hide_signature", "fallback" },
 		},
+
 		appearance = {
 			nerd_font_variant = "mono",
+		},
+
+		completion = {
+			documentation = {
+				auto_show = true,
+				auto_show_delay_ms = 500,
+			},
+			list = {
+				selection = {
+					preselect = true,
+					auto_insert = false,
+				},
+			},
+			-- keyword = { range = "prefix" },
+			-- menu = {
+			-- 	draw = {
+			-- 		treesitter = { "lsp" },
+			-- 	},
+			-- },
+			-- trigger = { show_on_trigger_character = true },
+			
 		},
 		-- Sources are configured via the sources.providers table
 		sources = {
 			default = { "lsp", "path", "snippets", "buffer" },
 		},
+
 		fuzzy = { implementation = "prefer_rust_with_warning" },
-		completion = {
-			keyword = { range = "prefix" },
-			menu = {
-				draw = {
-					treesitter = { "lsp" },
-				},
-			},
-			trigger = { show_on_trigger_character = true },
-			documentation = {
-				auto_show = true,
-			},
-		},
-		signature = { enabled = true },
+		
+		-- signature = { enabled = true },
 	},
 	opts_extend = { "sources.default" },
 }

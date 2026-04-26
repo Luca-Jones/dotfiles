@@ -17,6 +17,7 @@ exec_always --no-startup-id ~/.config/polybar/polybar.sh
 # exec_always nitrogen --set-zoom-fill ~/Pictures/wallpapers/bulbasaur.png
 exec_always feh --bg-fill ~/Pictures/wallpapers/rayquaza.jpg
 exec_always --no-startup-id picom
+exec_always --no-startup-id redshift -l 49:-120 -t 6500:3000 
 
 # to find your touchpad simply run xinput
 set $xid $(xinput list --id-only 'ELAN067B:00 04F3:31F8 Touchpad')
