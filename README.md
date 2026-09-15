@@ -18,7 +18,3 @@ git reset --hard
 
 > `--adopt` pulls existing files into the stow directory, then `git reset --hard` restores them to the repo versions, effectively replacing your current configs with these dotfiles.
 
-## Notes
-
-- I'm planning to move away from oh-my-zsh in the future in favor of a leaner Zsh setup.
-- picom is throwing some errors I couldn't be bothered to deal with rn.
