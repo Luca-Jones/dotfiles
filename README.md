@@ -8,8 +8,11 @@ The basic setup is Arch Linux + i3 tiling window manager (xorg).
 ## Installation
 
 ```bash
-cd dotfiles
-stow . --adopt
+for pkg in cava i3 kitty picom polybar rofi zathura; do
+    mkdir -p ~/.config/"$pkg"
+    stow --adopt -t ~/.config/"$pkg" "$pkg"
+done
+stow --adopt -t ~ bash
 git reset --hard
 ```
 
